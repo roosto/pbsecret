@@ -1,0 +1,6 @@
+# binary outputs
+pbsecret
+*.dSYM
+
+# macOS cruft
+.DS_STORE
