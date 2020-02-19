@@ -7,7 +7,5 @@ all:
 		$(NAME).m
 
 clean:
-
-	rm -v ($NAME).dSYM/*;
-	rmdir ($NAME).dSYM;
+	rm -rfv $(NAME).dSYM ;
 	rm -v $(NAME);
