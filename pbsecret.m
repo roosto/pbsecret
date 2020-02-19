@@ -97,8 +97,8 @@ int main (int argc, char* const argv[]) {
 	NSPasteboard* pasteboard= [NSPasteboard generalPasteboard];
 	[pasteboard clearContents];
 
-	[pasteboard setData: inputData forType: @"org.nspasteboard.ConcealedType"];
-	[pasteboard setData: inputData forType: @"public.utf8-plain-text"];
+	[pasteboard setData: [@"" dataUsingEncoding:NSUTF8StringEncoding] forType: @"org.nspasteboard.ConcealedType"];
+	[pasteboard setData: inputData forType: @"NSStringPboardType"];
 
 	return EXIT_SUCCESS;
 }
